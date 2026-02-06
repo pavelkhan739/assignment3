@@ -1,11 +1,15 @@
-function validOtp(OTP) {
-    if (typeof OTP !== "string") {
+function validOtp(otp) 
+{
+    if (typeof otp !== "string") 
+    {
         return "Invalid";
     }
-    if (OTP.length !== 8) {
+    if (otp.length !== 8) 
+    {
         return false;
     }
-    if (!OTP.startsWith("ph-")) {
+    if (!otp.startsWith("ph-")) 
+    {
         return false;
     }
     return true;
