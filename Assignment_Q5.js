@@ -21,10 +21,10 @@ function analyzeText(str)
         }
     }
 
-    let totalChars = str.split(" ").join("").length;
+    let total_Chars = str.split(" ").join("").length;
 
     return {
         longwords: longest,
-        token: totalChars
+        token: total_Chars
     };
 }
