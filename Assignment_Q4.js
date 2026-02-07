@@ -1,5 +1,5 @@
 function gonoVote(votes) {
-    if (!Array.isArray(votes)) {
+    if (Array.isArray(votes) === false) {
         return "Invalid";
     }
 
