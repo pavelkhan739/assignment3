@@ -3,20 +3,20 @@ function gonoVote(votes) {
         return "Invalid";
     }
 
-    let haCount = 0;
-    let naCount = 0;
+    let hacount = 0;
+    let nacount = 0;
 
     for (let i = 0; i < votes.length; i++) {
         if (votes[i] === "ha") {
-            haCount++;
+            hacount++;
         } else if (votes[i] === "na") {
-            naCount++;
+            nacount++;
         }
     }
 
-    if (haCount > naCount) {
+    if (hacount > nacount) {
         return true;
-    } else if (haCount === naCount) {
+    } else if (hacount === nacount) {
         return "equal";
     } else {
         return false;
