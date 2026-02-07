@@ -8,7 +8,7 @@ function newPrice(currentPrice, discount)
     {
         return "Invalid";
     }
-    let cutprice = (currentPrice * discount) / 100;
-    let newCost = currentPrice - cutprice;
-    return newCost.toFixed(3);
+    let discount_price = (currentPrice * discount) / 100;
+    let new_Price = currentPrice - discount_price;
+    return new_Price.toFixed(3);
 }
