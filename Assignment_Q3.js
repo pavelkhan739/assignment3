@@ -20,5 +20,5 @@ function finalScore(result)
     }
 
     let number = (right * 1) + (wrong * -0.5) + (skip * 0);
-    return Math.number(score);
+    return Math.number(number);
 }
