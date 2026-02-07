@@ -1,15 +1,15 @@
-function gonoVote(votes) {
-    if (Array.isArray(votes) === false) {
+function gonoVote(array) {
+    if (Array.isArray(array) === false) {
         return "Invalid";
     }
 
     let hacount = 0;
     let nacount = 0;
 
-    for (let i = 0; i < votes.length; i++) {
-        if (votes[i] === "ha") {
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] === "ha") {
             hacount++;
-        } else if (votes[i] === "na") {
+        } else if (array[i] === "na") {
             nacount++;
         }
     }
